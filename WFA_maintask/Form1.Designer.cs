@@ -32,13 +32,14 @@
             this.Result = new System.Windows.Forms.ListBox();
             this.cmdTest1 = new System.Windows.Forms.Button();
             this.cmdTest2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmdTest
             // 
-            this.cmdTest.Location = new System.Drawing.Point(51, -1);
+            this.cmdTest.Location = new System.Drawing.Point(12, -1);
             this.cmdTest.Name = "cmdTest";
-            this.cmdTest.Size = new System.Drawing.Size(431, 39);
+            this.cmdTest.Size = new System.Drawing.Size(259, 39);
             this.cmdTest.TabIndex = 1;
             this.cmdTest.Text = "Выгрузить данные из БД";
             this.cmdTest.UseVisualStyleBackColor = true;
@@ -47,16 +48,16 @@
             // Result
             // 
             this.Result.FormattingEnabled = true;
-            this.Result.Location = new System.Drawing.Point(-1, 182);
+            this.Result.Location = new System.Drawing.Point(-1, 104);
             this.Result.Name = "Result";
-            this.Result.Size = new System.Drawing.Size(555, 173);
+            this.Result.Size = new System.Drawing.Size(713, 329);
             this.Result.TabIndex = 2;
             // 
             // cmdTest1
             // 
-            this.cmdTest1.Location = new System.Drawing.Point(51, 44);
+            this.cmdTest1.Location = new System.Drawing.Point(12, 44);
             this.cmdTest1.Name = "cmdTest1";
-            this.cmdTest1.Size = new System.Drawing.Size(431, 49);
+            this.cmdTest1.Size = new System.Drawing.Size(259, 39);
             this.cmdTest1.TabIndex = 3;
             this.cmdTest1.Text = "Количество строк";
             this.cmdTest1.UseVisualStyleBackColor = true;
@@ -64,19 +65,30 @@
             // 
             // cmdTest2
             // 
-            this.cmdTest2.Location = new System.Drawing.Point(51, 99);
+            this.cmdTest2.Location = new System.Drawing.Point(332, 0);
             this.cmdTest2.Name = "cmdTest2";
-            this.cmdTest2.Size = new System.Drawing.Size(431, 43);
+            this.cmdTest2.Size = new System.Drawing.Size(259, 38);
             this.cmdTest2.TabIndex = 4;
             this.cmdTest2.Text = "Добавить данные";
             this.cmdTest2.UseVisualStyleBackColor = true;
             this.cmdTest2.Click += new System.EventHandler(this.cmdTest2_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(332, 44);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(259, 39);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Удалить данные";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(548, 346);
+            this.ClientSize = new System.Drawing.Size(717, 433);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.cmdTest2);
             this.Controls.Add(this.cmdTest1);
             this.Controls.Add(this.Result);
@@ -93,6 +105,7 @@
         private System.Windows.Forms.ListBox Result;
         private System.Windows.Forms.Button cmdTest1;
         private System.Windows.Forms.Button cmdTest2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
